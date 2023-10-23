@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Charts</title>
+
+   
+   
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	
+	  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body style=" background-color:#616463;">
+
+<header>
+  <div class="container">
+    <div class="logo-box">
+      <a href="/">
+        <img src="image/samsung_logo.png">
+      </a>
+    </div>
+    <nav>
+    <ul>
+      <li><a href="{% url 'home'%}" class = "appname">Complaint Management System</a></li>
+      <li> <a class=" btn btn-success px-3" href="{% url 'admin:index'%}"><i class="fas fa-users" aria-hidden="true"></i>
+            <strong>User Login</strong></a>
+
+      <a class=" btn btn-success px-3" href="{% url 'home'%}"><i class="fas fa-home" aria-hidden="true"></i>
+            <strong>Home</strong>
+      
+      </a>
+      
+      </li>
+   </ul>
+  </nav>
+  </div>
+</header>
+<main class="container-fluid">
+
+ <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xl font-weight-bold text-primary text-uppercase mb-1">
+                                                Total Faults</div>
+                                            <div class="h3 mb-0 font-weight-bold text-gray-800">80</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-800"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Annual) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xl font-weight-bold text-success text-uppercase mb-1">
+                                                Rectified Faults</div>
+                                            <div class="h3 mb-0 font-weight-bold text-gray-800">60</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-800"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <!-- Earnings (Annual) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xl font-weight-bold text-info text-uppercase mb-1">
+                                                Pending Faults</div>
+                                            <div class="h3 mb-0 font-weight-bold text-gray-800">12</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-800"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xl font-weight-bold text-warning text-uppercase mb-1">
+                                                Disputed Faults</div>
+                                            <div class="h3 mb-0 font-weight-bold text-gray-800">8</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-800"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+    
+
+       
+
+            
+
+                
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Content Row -->
+                    <div class="row">               
+
+
+ <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+                <div class="row">
+
+
+            <div class="col-lg-12 mb-4">
+                    <a class=" btn btn-primary card-body card bg-primary text-white shadow  text-left"  href="{% url 'admin:index'%}">Add New Fault</a>
+   
+            </div>
+
+
+           
+            <div class="col-lg-12 mb-4">
+                    <a class=" btn btn-success card-body card bg-success text-white shadow  text-left"  href="{% url 'complaints'%}">Update Fault Status</a>
+   
+            </div>
+
+
+             <div class="col-lg-12 mb-4">
+                    <a class=" btn btn-warning card-body card bg-warning text-white shadow  text-left"  href="{% url 'disputed'%}">View / Search Faults</a>
+   
+            </div>
+
+
+            <div class="col-lg-12 mb-4">
+                <div class="btn-group card-body card bg-info text-white shadow " style="height: 4rem; padding:0px;">
+                    <button type="button" class="btn btn-info dropdown-toggle text-left"
+                    data-bs-toggle="dropdown" aria-expanded="false" >
+                        View Faults By Status
+                    </button>
+            <ul class="dropdown-menu dropdown-menu-end col-lg-6 mb-2">
+                <li><a class="dropdown-item card-body card bg-info text-white shadow" href="{% url 'rectified'%}">Rectified</a></li>
+                    <li><a class="dropdown-item card-body card bg-info text-white shadow" href="{% url 'pending'%}">Pending</a></li>
+                        <li><a class="dropdown-item card-body card bg-info text-white shadow"href="{% url 'disputed'%}">Disputed</a></li>
+                    <li><a class="dropdown-item card-body card bg-info text-white shadow" href="{% url 'observation'%}">Under Observation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+                </div>
+            </div>
+					
+
+                        <!-- Donut Chart -->
+                        <div class="col-xl-6 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pending Faults</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="col-xl-12 col-lg-8">
+
+				<!-- Bar Chart -->
+				<div class="card shadow mb-4">
+					<div class="card-header py-3">
+						<h6 class="m-0 font-weight-bold text-primary">Station Chart</h6>
+					</div>
+					<div class="card-body">
+						<div class="chart-bar">
+							<canvas id="myBarChart"></canvas>
+						</div>
+						<hr>
+					</div>
+				</div>
+
+				</div>
+						
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+           
+            <!-- End of Main Content -->
+
+
+       
+        <!-- End of Content Wrapper -->
+
+    
+    <!-- End of Page Wrapper -->
+
+      
+</main>
+
+
+
+<footer class="sticky-footer bg-gradient-dark">
+                <div class="container-fluid">
+                    <div class="copyright text-center font-weight-bolder text-white ">
+                        <span>Copyright &copy; Complaint Management System 2021</span>
+                        <br/>
+                          <a class="text-warning font-weight-bold" href="{% url 'linkedin'%}" style="text-reset; line-height: 2.2em;font-size:16px">Developed By : Mohammad Nabeel</a>
+                    </div>         
+                </div>
+            </footer>
+            <!-- End of Footer -->
+  
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->   
+    <script src="js/demo/chart-pie-demo.js"></script>
+	<script src="js/demo/chart-bar-demo.js"></script>
+
+</body>
+
+</html>
